@@ -1,5 +1,5 @@
 {
-  "name": "QrRun",
+  "name": "QrRunner",
   "integrations": {
     "capacitor": {},
     "cordova": {}
