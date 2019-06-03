@@ -1,0 +1,7 @@
+{
+  "appId": "com.qrrunner.app",
+  "appName": "QrRunner",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

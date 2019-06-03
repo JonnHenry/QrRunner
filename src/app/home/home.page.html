@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <!--<ion-img class="logoApp" src="/assets/imgs/logo-app.svg" ></ion-img>-->
+    <ion-card-header>
+      <ion-img class="logoComunidad" src="/assets/imgs/logo-comunidad.png"></ion-img>
+      <ion-card-title align="center">QrRunner</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-subtitle color="primary" align="center">Bienvenido</ion-card-subtitle>
+
+    <ion-card-content>
+      <p align=justify>QrRunner de Microsoft UCuenca es un juego que involucra actividad física, utilizar tu intelecto
+        emplear la tecnología dentro del mismo.</p>
+      <p align=justify>
+        El objetivo del juego es recorrer diferentes estaciones ubicadas en el campus universitario, donde se
+        encontraran distintas preguntas las cuales te acreditan o descontarán un punto.
+      </p>
+      <p align=justify>
+        En cada estación se encuentra un código QR correspondiente a cada equipo. Al escanear el código con la
+        aplicación se deberá responder a cierta pregunta en estación. Después de responder cada pregunta, la aplicación
+        te indicará cual es la estación siguiente.
+      </p>
+      <br/>
+      <h5 align=justify><b><i>El equipo con mayor cantidad de puntos será el ganador.</i></b></h5>
+      <br/>
+      <ion-button fill="outline" slot="end" expand="block" (click)="startGame()">Empezar el juego</ion-button>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

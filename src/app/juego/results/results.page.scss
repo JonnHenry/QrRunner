@@ -1,0 +1,27 @@
+.tabla {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+    text-align: center;
+    border: 1px solid#8CCCF8;
+    border-radius: 5px;
+}
+
+.colprimary{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.td {
+    height: 50px;
+    vertical-align: bottom;
+}
+.tr:nth-child(even) {background-color: #f2f2f2;}
+
+ion-content{
+    --ion-background-color:#F9FAFA;
+}
+
+.alignRigth{
+    text-align: right;
+}

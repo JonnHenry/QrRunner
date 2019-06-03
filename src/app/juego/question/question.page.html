@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title class="ion-text-center">Pregunta {{numberOfQuestion}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!completeLoad; else elseBlock">
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  </div>
+  <ng-template #elseBlock>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Equipo: {{dataTeam.name}}</ion-card-title>
+      </ion-card-header>
+
+
+      <ion-item>
+        <ion-radio-group>
+          <h4 class="ion-text-center colorTexto">{{questionTeam}}</h4>
+
+          <ion-item *ngFor="let options of optionsTeam">
+            <ion-label color="dark-shade" required>{{options}}</ion-label>
+            <ion-radio (ionSelect)="checkValue($event)" [value]='options'></ion-radio>
+          </ion-item>
+          <br />
+        </ion-radio-group>
+
+      </ion-item>
+
+    </ion-card>
+
+    <div class="ion-float-right" *ngIf='counter<7; else elseBlock'>
+      <ion-button class="ion-text-end ion-bottonMove " color="success" size="small" (click)="nextPlace()">Siguiente
+        <ion-icon name="arrow-round-forward">
+        </ion-icon>
+      </ion-button>
+    </div>
+    <ng-template #elseBlock>
+      <div class="ion-float-right">
+        <ion-button class="ion-text-end ion-bottonMove " size="small" (click)="finishTheGame()">Finalizar <ion-icon
+            name="arrow-round-forward"></ion-icon>
+        </ion-button>
+      </div>
+    </ng-template>
+  </ng-template>
+
+</ion-content>

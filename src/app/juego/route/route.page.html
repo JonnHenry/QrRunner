@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title>Rutas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="!cargado; else elseBlock">
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  </div>
+  <ng-template #elseBlock>
+    <ion-card>
+      <ion-card-header>
+        <ion-img [src]="placeTeam.rutaFoto"></ion-img>
+        <ion-card-title>Lugar: {{placeTeam.nombreLugar}}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        Debes dirigirte al lugar mostrado lo más pronto posible para poder ganar tiempo y responder las preguntas.
+        <br />
+        <br />
+        <ion-button color="primary" expand="block" (click)="scanTheCode()">Escanear el codigo QR<ion-icon
+            name="qr-scanner"></ion-icon>
+        </ion-button>
+        <br />
+        <br />
+      </ion-card-content>
+
+    </ion-card>
+
+  </ng-template>
+
+
+</ion-content>

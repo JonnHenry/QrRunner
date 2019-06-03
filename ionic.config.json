@@ -1,0 +1,8 @@
+{
+  "name": "QrRun",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

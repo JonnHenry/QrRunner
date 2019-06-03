@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-button color="medium" fill="outline" slot="start" size="large" (click)="return(formRegistryTeam)">
+      <ion-icon name="arrow-round-back" color="light"></ion-icon>
+    </ion-button>
+    <ion-title slot="start">Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card-header>
+    <ion-img class="logoComunidad" src="/assets/imgs/logo-comunidad.png"></ion-img>
+    <ion-card-title align="center">QrRunner</ion-card-title>
+  </ion-card-header>
+
+  <form #formRegistryTeam="ngForm" (ngSubmit)="registryTeam(formRegistryTeam)">
+    <ion-card>
+      <ion-item>
+        <ion-icon color="primary" name="create" slot="start"></ion-icon>
+        <ion-label position="floating"><b>Nombre del equipo</b></ion-label>
+        <ion-input [(ngModel)]="name" name="nameTeam" required #nameTem="ngModel"></ion-input>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon color="primary" name="key" slot="start"></ion-icon>
+        <ion-label position="floating"><b>Contraseña</b></ion-label>
+        <ion-input [(ngModel)]="password" type="password" name="passwordTeam" required #passwordTem="ngModel"></ion-input>
+      </ion-item>
+    </ion-card>
+
+    <ion-button type="submit" class="ion-text-uppercase" color="success" expand="full"
+      [disabled]="!formRegistryTeam.form.valid">Agregar Equipo</ion-button>
+
+
+  </form>
+</ion-content>
