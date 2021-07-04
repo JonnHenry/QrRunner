@@ -8,10 +8,10 @@ QrRunner es una aplicación creada como juego para la semana del Estudiante de l
 
 <h2>Imagenes del funcionamiento de la app</h2>
 <p>Login para insertar los codigos de funcionamiento de la App</p>
-<img src="./imagesApp/loginScreen.png" width="500" height="600"/>
+<img src="./imagesApp/loginScreen.png" width="300" height="500"/>
 <p>Instrucciones del juego</p>
-<img src="./imagesApp/instructions.png" width="500" height="600"/>
+<img src="./imagesApp/instructions.png" width="300" height="500"/>
 <p>Funcionamiento del juego</p>
-<img src="./imagesApp/game.png" width="500" height="600"/>
+<img src="./imagesApp/game.png" width="300" height="500"/>
 <p>Resultados de las respuestas</p>
-<img src="./imagesApp/result.jpg" width="500" height="600"/>
+<img src="./imagesApp/result.jpg" width="300" height="500"/>
